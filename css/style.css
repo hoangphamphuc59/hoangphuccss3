@@ -1,131 +1,51 @@
-/* =======================================================
-   BASIC LAYOUT & TYPOGRAPHY (Box Model)
-   ======================================================= */
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f9fbf9;
-  color: #333333;
+body{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 150%;
 }
-
-/* Header section at the top of every page */
-header {
-  background-color: #2e7d32; /* Forest Green */
-  color: white;
-  padding: 30px 15px;
-  text-align: center;
-  border-bottom: 5px solid #1b5e20;
+/* li{
+  display: inline;
+  background-color: lightblue;
+  width: 30%;
+  border-radius: 3px;
+  padding-left: 10px;
+  margin: 10px;
+} */
+header{
+  background-color: brown;
+  padding: 10px;
 }
-
-/* The circular dog avatar image in the header */
-header img {
-  border-radius: 50%;
-  border: 4px solid white;
-  margin-top: 15px;
-  transition: transform 0.3s; /* Smooth hover effect */
+nav{
+  margin: 5px;
+  background-color: yellow;
+  display: inline-block;
+  width: 80%;
 }
-
-/* Simple scale transition when hovering over the dog image */
-header img:hover {
-  transform: scale(1.05);
+nav img{
+  width: 10%;
 }
-
-header h1 {
-  margin: 10px 0 0 0;
-  font-size: 32px;
+.grid{
+  display: grid;
+  grid-template-columns: repeat(2, 40%);
 }
-
-/* Main Content Container (Box Model centering) */
-main {
-  width: 90%;
-  max-width: 800px;
-  margin: 30px auto; /* Centering the container */
-  padding: 20px;
-  background-color: white;
-  border: 1px solid #e0e0e0;
-  border-radius: 8px;
-}
-
-/* Footer section at the bottom of the page */
-footer {
-  background-color: #333333;
-  color: #dddddd;
-  text-align: center;
-  padding: 20px;
-  margin-top: 50px;
-}
-
-footer a {
-  color: #81c784;
-}
-
-/* =======================================================
-   ACCESSIBILITY: SKIP TO MAIN CONTENT
-   ======================================================= */
-/* Hidden off-screen by default */
-a[href="#main-content"]{
-  position: absolute;
-  background-color: aqua;
-}
-
-/* =======================================================
-   NAVIGATION BAR (Flexbox)
-   ======================================================= */
-nav ul {
-  display: flex; /* Arranges list items horizontally */
-  justify-content: center; /* Centers navigation items */
-  list-style-type: none;
-  padding: 0;
-  margin: 0 0 20px 0;
-}
-
-nav li {
-  margin: 0 10px;
-}
-
-nav a {
-  text-decoration: none;
-  color: #2e7d32;
-  font-weight: bold;
-  font-size: 18px;
-  padding: 8px 16px;
-  background-color: #f1f8e9;
-  border: 2px solid transparent;
-  border-radius: 5px;
-  transition: background-color 0.2s, border-color 0.2s;
-}
-
-/* Hover effect on navigation links */
-nav a:hover {
-  background-color: #c8e6c9;
-  border-color: #2e7d32;
-}
-
-/* =======================================================
-   PHOTO GALLERY (CSS Grid)
-   ======================================================= */
-/* targets the div wrapping the images in neighborhood.html and parks.html */
-main div {
-  display: grid; /* Grid layout */
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive columns */
-  gap: 20px; /* Gap between grid items */
-  margin-top: 20px;
-}
-
-main div img {
+.grid img{
   width: 100%;
-  height: 180px;
-  object-fit: cover; /* Crops image cleanly */
-  border: 3px solid #e0e0e0;
-  border-radius: 8px;
-  padding: 5px; /* Box model border + padding + background */
-  background-color: white;
-  transition: transform 0.3s, border-color 0.3s; /* Transitions */
 }
-
-/* Zoom effect and border color change on hover */
-main div img:hover {
-  transform: scale(1.04);
-  border-color: #2e7d32;
+.flex{
+  display: flex;
+}
+main{
+  background-color: aquamarine;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 100%;
+}
+footer{
+  background-color: blueviolet;
+}
+h1{
+  text-align: center;
+  color: blanchedalmond;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+p{
+  line-height: normal;
 }
