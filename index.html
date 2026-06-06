@@ -3,26 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Gallery & Calculator</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js"></script>
-    <title>My Page OK</title>
 </head>
 <body>
     <header>
-        <h1>This is for JS course</h1>
+        <h1>Random thing i create for this project</h1>
     </header>
     <main>
-        <div id="d1" class="default">
-            <p id="alt-text">img alt here</p>
-        </div>
-        <div id="d2">
-            <img src="img/img1.png" alt="white tree" onmouseover="change(this)" onmouseleave="setDefault()">
-            <img src="img/img2.png" alt="red flower" onmouseover="change(this)" onmouseleave="setDefault()">
-            <img src="img/img3.png" alt="dark plant" onmouseover="change(this)" onmouseleave="setDefault()">
-        </div>
+        <section class="gallery-section">
+            <h1 class="visually-hidden">Image Gallery</h1>
+            <div class="image-list">
+                <img src="img/img1.png" alt="Image 1" class="thumbnail" tabindex="0">
+                <img src="img/img2.png" alt="Image 2" class="thumbnail" tabindex="0">
+                <img src="img/img3.png" alt="Image 3" class="thumbnail" tabindex="0">
+            </div>
+            <div id="preview-div" class="preview-div" aria-live="polite">
+                <img id="preview-img" src="" alt="Preview">
+                <p class="placeholder-text">Hover or focus an image to preview</p>
+            </div>
+        </section>
+
+        <section class="calculator-section">
+            <h2 class="visually-hidden">Calculator</h2>
+            <div class="calculator">
+                <input type="number" id="num1" class="calc-input" placeholder="Number 1">
+                <select id="operator" class="calc-select">
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="*">*</option>
+                    <option value="/">/</option>
+                </select>
+                <input type="number" id="num2" class="calc-input" placeholder="Number 2">
+                <button id="calc-btn" class="calc-action">Calculate</button>
+                <div class="calc-result">Result: <span id="result-display">0</span></div>
+            </div>
+        </section>
     </main>
-    <footer>
-        <p>made by hoang phuc</p>
-    </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
