@@ -5,61 +5,59 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Colors</title>
+  <title>Final Project</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <header>
-    <h1 id="top">Colors!</h1>
+  <header class="text-center py-4 bg-primary text-white mb-4">
+    <h1 id="top" class="m-0">Final Project - Color Gallery</h1>
   </header>
 
-  <main>
-    <h2>Basic Media Queries</h2>
-    <p>In this assignment you will add two media queries to the css file.</p>
-    <ul>
-      <li>The first media query should trigger at 772px and change the layout of the divs to be 45% of the viewport width. The images should have a maximum height of 30% of the viewport height.</li>
+  <main class="container">
+    <p>Welcome to my color gallery. This site showcases a variety of beautiful and vibrant colors, each with its own unique personality and emotion. You'll find a spectrum ranging from the deepest reds to the brightest whites.</p>
 
-      <li>The second media query should trigger at 998px and change the layout of the divs to be 30% of the viewport width.</li>
-    </ul>
-    <p>You will need to make additional changes to ensure that the divs appear next to each other and that the images are contained within the divs.  Some of these properties include display, width and max-height.</p>
-
-    <div>
-      <img src="images/Red.jpeg" alt="Red" width="200">
-      <p class = "label">Red</p>
-    </div>
-    <div>
-      <img src="images/Orange.png" alt="Orange" width="200">
-      <p class = "label">Orange</p>
-    </div>
-    <div>
-      <img src="images/Yellow.png" alt="Yellow" width="200">
-      <p class = "label">Yellow</p>
-    </div>
-    <div>
-      <img src="images/Green.png" alt="Green" width="200">
-      <p class = "label">Green</p>
-    </div>
-    <div>
-      <img src="images/Blue.png" alt="Blue" width="200">
-      <p class = "label">Blue</p>
-    </div>
-    <div>
-      <img src="images/Indigo.jpeg" alt="Indigo" width="200">
-      <p class = "label">Indigo</p>
-    </div>
-    <div>
-      <img src="images/Purple.png" alt="Purple" width="200">
-      <p class = "label">Purple</p>
-    </div>
-    <div>
-      <img src="images/Pink.jpeg" alt="Pink" width="200">
-      <p class = "label">Pink</p>
-    </div>
-    <div>
-      <img src="images/White.png" alt="White" width="200">
-      <p class = "label">White</p>
-    </div>
+    <p>The layout of this gallery is fully responsive, utilizing CSS Grid to provide an optimal viewing experience on any device. Whether you are browsing on a mobile phone, tablet, or a large desktop monitor, the images adapt seamlessly to your screen. Furthermore, the design respects your system preferences for motion and color scheme, offering a customized and accessible experience.</p>
+    
+    <div class = "grid">
+        <figure>
+        <img src="images/Red.jpeg" alt="Red" width="200">
+        <figcaption>Red</figcaption>
+        </figure>
+        <figure>
+        <img src="images/Orange.png" alt="Orange" width="200">
+        <figcaption>Orange</figcaption>
+        </figure>
+        <figure>
+        <img src="images/Yellow.png" alt="Yellow" width="200">
+        <figcaption>Yellow</figcaption>
+        </figure>
+        <figure>
+        <img src="images/Green.png" alt="Green" width="200">
+        <figcaption>Green</figcaption>
+        </figure>
+        <figure>
+        <img src="images/Blue.png" alt="Blue" width="200">
+        <figcaption>Blue</figcaption>
+        </figure>
+        <figure>
+        <img src="images/Indigo.jpeg" alt="Indigo" width="200">
+        <figcaption>Indigo</figcaption>
+        </figure>
+        <figure>
+        <img src="images/Purple.png" alt="Purple" width="200">
+        <figcaption>Purple</figcaption>
+        </figure>
+        <figure>
+        <img src="images/Pink.jpeg" alt="Pink" width="200">
+        <figcaption>Pink</figcaption>
+        </figure>
+        <figure>
+        <img src="images/White.png" alt="White" width="200">
+        <figcaption>White</figcaption>
+        </figure>
     </div>
   </main>
 
